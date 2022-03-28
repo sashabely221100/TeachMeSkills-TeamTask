@@ -1,3 +1,3 @@
-# Вёрстка Goldenapple для TeachMeSkills
+# Вёрстка ✈ Aviasales ✈ для TeachMeSkills
 
 ## MArch, 2022
