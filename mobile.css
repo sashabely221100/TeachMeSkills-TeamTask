@@ -1,0 +1,52 @@
+
+@media only screen and (max-device-width : 320px) {
+    .main__top__title{
+        font-size: 2rem;
+    }
+    .main__top__caption{
+        font-size: 0.9rem;
+    }
+    .services__title{
+        font-size: 1.625rem;
+    }
+    .services__details{
+        font-size: 1.0625rem;
+    }
+    .services__features-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__content__destinations{
+        flex-direction: column;
+        width: fit-content;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main__content__destination--element{
+        flex-basis: 80%;
+    }
+    .footer{
+        margin-top: 150px;
+    }
+    .footer__mobVersion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__mobVersion div {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__mobVersion select {
+        text-align: center;
+        width: 300px;
+        background: rgb(240 240 240);
+        border: none;
+    }
+
+}
+
+
