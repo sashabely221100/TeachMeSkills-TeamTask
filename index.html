@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviasales</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header class="header">
         <nav>
-            <img src="#logo" alt="">
+            <img src="images/icon.png" alt="#logo" id="logo">
             <div class="header__wrapper--left">
                 <div class="header__wrapper__profile">
-                    <img src="#profile_icon" alt="">
+                    <img src="images/user-icon.png" alt="user-icon" id="user-icon">
                     <h4>Профиль</h4>
                 </div>
                 <div class="header__wrapper__lang"></div>
@@ -31,17 +37,19 @@
             <h1 class="main__top__title">Поиск дешевых авиабилетов</h1>
             <h3 class="main__top__caption">Легкий способ купить авиабилеты дёшево</h3>
             <div class="controls">
-                <button class="main____top__controls--btn">Авиабилеты</button>
-                <button class="main____top__controls--btn">Отели</button>
+                <button class="main____top__controls--btn1">Авиабилеты</button>
+                <button class="main____top__controls--btn2">Отели</button>
             </div>
         </section>
 
         <section class="main__content">
             <div class="main__content__about">
-                <img></img>
-                <span>Мы не продаём авиабилеты, а помогаем найти самые дешёвые. Бесплатно.
-                </span>
-                <a class="main__content__about--link"></a>
+                <div>
+                    <img src="images/search.png" alt="" id="search">
+                    <span>Мы не продаём авиабилеты, а помогаем найти самые дешёвые. Бесплатно.
+                    </span>
+                </div>
+                <a class="main__content__about--link">Подробнее</a>
             </div>
             <div class="services__wrap">
                 <div class="services__header">
@@ -58,7 +66,7 @@
                 <ul class="services__features-list">
                     <li class="services__feature">
                         <div class="services__feature-icon">
-                            <img src="illustration_map.svg" data-loaded="true">
+                            <img src="images/illustration_map.svg">
                         </div>
                         <h3 class="services__feature-title">Карта</h3>
                         <p class="services__feature-description">Не знаете, куда купить авиабилеты? Вам сюда.</p>
@@ -69,7 +77,7 @@
                     </li>
                     <li class="services__feature">
                         <div class="services__feature-icon">
-                            <img src="/illustration_hotels.svg" .>
+                            <img src="images/illustration_hotels.svg">
                         </div>
                         <h3 class="services__feature-title">Отели</h3>
                         <p class="services__feature-description">Забронируйте номер по выгодной цене.</p>
@@ -80,7 +88,7 @@
                     </li>
                     <li class="services__feature">
                         <div class="services__feature-icon">
-                            <img src="illustration_account.svg">
+                            <img src="images/illustration_account.svg">
                         </div>
                         <h3 class="services__feature-title">Личный кабинет</h3>
                         <p class="services__feature-description">Конкурсы, скидки, история и&nbsp;избранное.</p>
@@ -93,63 +101,175 @@
 
 
             <div class="main__content__destinations--wrapper">
-                <img class="main__content__destinations--icon" src="telegram_icon" alt="">
+                <img class="main__content__destinations--icon" src="images/telegram_icon.svg" alt="">
                 <h3 class="main__content__destinations--heading">Популярные направления</h3>
-                <div class="main__content__destinations__directions">
-                    <div class="main__content__direction">Москва</div>
-                    <div class="main__content__direction">Тбилиси</div>
-                    <div class="main__content__direction">Варшава</div>
-                    <div class="main__content__direction">Стамбул</div>
-                    <div class="main__content__direction">Батуми</div>
-                    <div class="main__content__direction">Анталья</div>
-                    <div class="main__content__direction">Калининград</div>
-                    <div class="main__content__direction">Ташкент</div>
-                    <div class="main__content__direction">Дубай</div>
-                    <div class="main__content__direction">Ереван</div>
-                    <div class="main__content__direction">Санкт-Петербург</div>
-                    <div class="main__content__direction">Киев</div>
+
+                <div class="main__content__destinations">
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/ru-flag.png">
+                        <div class="main__content__destination--element__text"> Москва</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/poland.png">
+                        <div class="main__content__destination--element__text">Варшава</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/turkey-flag.png">
+                        <div class="main__content__destination--element__text">Стамбул</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/georgia-flag.png">
+                        <div class="main__content__destination--element__text">Батуми</div>
+                        <div class="triangle-down"></div>
+                    </div>
+
+
+
+
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/ae.png">
+                        <div class="main__content__destination--element__text">Дубай</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/turkey-flag.png">
+                        <div class="main__content__destination--element__text">Санкт-Петербург</div>
+                        <div class="triangle-down"></div>
+                    </div>
+
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/georgia-flag.png">
+                        <div class="main__content__destination--element__text">Тбилиси</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/turkey-flag.png">
+                        <div class="main__content__destination--element__text">Анталья</div>
+                        <div class="triangle-down"></div>
+                    </div>
+
+
+
+
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/turkey-flag.png">
+                        <div class="main__content__destination--element__text">Калининград</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/uzbekistan-flag.png">
+                        <div class="main__content__destination--element__text">Ташкент</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/armenia-flag.png">
+                        <div class="main__content__destination--element__text">Ереван</div>
+                        <div class="triangle-down"></div>
+                    </div>
+                    <div class="main__content__destination--element">
+                        <img class="main__content__destination--element__icon" src="images/ukraine.png">
+                        <div class="main__content__destination--element__text">Киев</div>
+                        <div class="triangle-down"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <hr>
+
         <footer class="footer">
-            <div class="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="footer__mobVersion">
+                <div>
+                    <select name="countries" required="required">
+                        <option value="">Страны</option>
+                        <option value="1">Россия</option>
+                        <option value="2">Беларусь</option>
+                        <option value="3">Испания</option>
+                        <option value="4">Израиль</option>
+                        <option value="6">Турция</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="cities" required="required">
+                        <option value="">Города</option>
+                        <option value="1">Минск</option>
+                        <option value="2">Москва</option>
+                        <option value="3">Вильнюс</option>
+                        <option value="4">Киев</option>
+                        <option value="6">Варшава</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="companies" required="required">
+                        <option value="">Авиакомпании</option>
+                        <option value="1">Белави</option>
+                        <option value="2">Ukraine International</option>
+                        <option value="3">Aeroflot</option>
+                        <option value="4">Nordwind</option>
+                        <option value="6">Utair</option>
+                    </select>
+                </div>
             </div>
-            <div class="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="foother__column">
+                <a href="">Россия</a>
+                <br>
+                <a href="">Беларусь</a>
+                <br>
+                <a href="">Испания</a>
+                <br>
+                <a href="">Израиль</a>
+                <br>
+                <a href="">Турция</a>
             </div>
-            <div class="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="foother__column">
+                <a href="">Минск</a>
+                <br>
+                <a href="">Москва</a>
+                <br>
+                <a href="">Вильнюс</a>
+                <br>
+                <a href="">Киев</a>
+                <br>
+                <a href="">Варшава</a>
             </div>
-            <div class="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="foother__column">
+                <a href="">Белавиа</a>
+                <br>
+                <a href="">Ukraine International</a>
+                <br>
+                <a href="">Aeroflot</a>
+                <br>
+                <a href="">Nordwind</a>
+                <br>
+                <a href="">Utair</a>
             </div>
-            <div class="">
-                <a href=""></a>
+            <div class="foother__column">
+                <a href="">Минск</a>
+                <br>
+                <a href="">Домодедово</a>
+                <br>
+                <a href="">Шереметьево</a>
+                <br>
+                <a href="">Вильнюс</a>
+                <br>
+                <a href="">Борисполь</a>
             </div>
-            <div class="">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="foother__column">
+                <a href="">Карта низких цен</a>
+            </div>
+            <div class="foother__column">
+                <a href="">Минск – Москва</a>
+                <br>
+                <a href="">Минск – Стамбул</a>
+                <br>
+                <a href="">Минск – Киев</a>
+                <br>
+                <a href="">Минск – Симферополь</a>
+                <br>
+                <a href="">Минск – Тбилиси</a>
             </div>
         </footer>
 
