@@ -117,7 +117,7 @@ nav{
 
 
 .main__content{
-    background: rgb(240 240 240);
+    background: linear-gradient(#0085ff17,hsla(0,0%,100%,.04));
     padding: 48px 0 6px;
     width: 100%;
 }
@@ -233,8 +233,8 @@ align-self: flex-start;}
     border-radius: 5px;
     height: 40px;
     width: 90%;
-    /* margin: auto; */
-    text-align: center;
+    margin: auto;
+    display: flex;text-align: center;
     font-weight: bold;
     line-height: 36px;
     
@@ -269,7 +269,7 @@ align-self: flex-start;}
 }
 
 .main__content__destination--element{
-    background: #e6e6fa;
+    background: #eff1f4;
     flex-shrink: 1;
     flex-basis: calc(33.33333% - 20px);
     width: max-content;
@@ -279,6 +279,11 @@ align-self: flex-start;}
     justify-content: space-between;
     /* margin: 2% 0%; */
     border-radius: 10px;
+}
+
+.main__content__destination--element:hover{
+    background: #e6e6fa;
+
 }
 
 .main__content__destination--element__text{
